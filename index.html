@@ -48,6 +48,7 @@
             font-size: 36px;
             font-weight: bold;
             text-align: center;
+            margin-bottom: 0; /* Remove default bottom margin */
         }
 
         .blink {
@@ -78,6 +79,24 @@
         .coming-soon-paragraph {
             color: #d4fa6c;
             font-size: 20px;
+            margin-top: 0; /* Remove default top margin */
+        }
+
+        .coming-soon-image {
+            animation: bounce 1.5s infinite alternate;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+    
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-20px);
+            }
         }
     </style>
 </head>
@@ -87,7 +106,7 @@
             <a href="/" class="w-nav-brand"><img src="/assets/logo.png" loading="lazy" alt="" height="30" /></a>
             <div id="countdown"></div>
             <h1 class="coming-soon-heading">Get Ready</h1>
-            <p class="coming-soon-paragraph" >To pioneer the next era of digital evolution with our cutting-edge blockchain and Web3 solutions. Coming soon!</p>
+            <p class="coming-soon-paragraph">To pioneer the next era of digital evolution with our cutting-edge blockchain and Web3 solutions.</p>
             <h2>Coming Soon<span id="blink" class="blink">!</span></h2>
         </div>
         <div class="div-block-40"><img src="/assets/logo.png" loading="lazy" alt="" class="coming-soon-image" /></div>
